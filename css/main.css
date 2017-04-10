@@ -95,16 +95,98 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*start of common rules*/
+
+* {
+    font-family: "Georgia",Times,serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tablette, .desk {
+    display: none;
+}
+
+/*Enc of common rules*/
 
 
+/*START OF HEADER*/
+
+header {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    position: fixed;
+}
+
+.menu, .panier {
+    width: 10%;
+    background-color: green;
+}
+
+.logo {
+    width: 30%;
+    background-color: green;
+}
+
+header figure {
+    width: 80%;
+}
+
+header figure a, header figure a img {
+    width: 80%;
+}
+
+/*END OF HEADER*/
+
+/*START OF SECTION*/
+
+/*END OF SECTION*/
+
+/*START OF FOOTER*/
+
+/*END OF FOOTER*/
 
 
+/*~~~~~ START OF TABLETTE ~~~~~*/
+@media (min-width: 768px;) {
+    /*start of common rules*/
 
+    /*Enc of common rules*/
 
+    /*START OF HEADER*/
 
+    /*END OF HEADER*/
 
+    /*START OF SECTION*/
 
+    /*END OF SECTION*/
 
+    /*START OF FOOTER*/
+
+    /*END OF FOOTER*/
+}
+
+/*~~~~~ START OF DESK ~~~~~*/
+@media (min-width: 10224px;) {
+    /*start of common rules*/
+
+    /*Enc of common rules*/
+
+    /*START OF HEADER*/
+
+    /*END OF HEADER*/
+
+    /*START OF SECTION*/
+
+    /*END OF SECTION*/
+
+    /*START OF FOOTER*/
+
+    /*END OF FOOTER*/
+}
 
 
 

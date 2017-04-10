@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Copie ArchiDuchesse</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" href="favicon.ico">
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -27,24 +28,38 @@
 
             <!-- Start of menu -->
             <nav class="menu">
-                <a href=""><figure class="mobil"><img src="img/menu.svg" alt="icon menu"></figure></a>
+                <figure class="mobil">
+                    <a href="">
+                        <img src="img/menu.svg" alt="icon menu">
+                    </a>
+                </figure>
                 <ul class="desk">
                     <li><a href="blog.html">Shop</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog.html">Inof.</a></li>
+                    <li><a href="blog.html">Info.</a></li>
                     <li><a href="blog.html">Atelier</a></li>
                 </ul>
             </nav>
             <!-- End of menu -->
 
             <!-- Start of logo -->
-            <a href="index.html"><figure><img src="img/indexArchiDuchesse.svg" alt="logo ArchiDuchesse"></figure></a>
+            <div class="logo">
+                <figure>
+                    <a href="index.html">
+                        <img src="img/indexArchiDuchesse.svg" alt="logo ArchiDuchesse">
+                    </a>
+                </figure>
+            </div>
             <!-- End of logo -->
 
             <!-- Start of panier -->
-            <aside>
-                <a href="#"><figure class="mobil"><img src="img/panier.svg" alt="panier"></figure></a>
-                <div class="desk panier">
+            <aside class="panier">
+                <figure class="mobil">
+                    <a href="#">
+                        <img src="img/panier.svg" alt="panier">
+                    </a>
+                </figure>
+                <div class="desk">
                     <select name="langue" id="langue">
                         <option value="fr" selected>FR</option>
                         <option value="en">EN</option>
@@ -397,14 +412,14 @@
         <!-- START OF FOOTER -->
 
         <footer>
-            Start of
+            <!-- Start of footer link -->
             <div class="link">
                 <article><a href="#">
                         <figure><img src="img/picto_fabrication.png" alt="un coq"></figure>
                         <h3>Fabrication Française</h3>
                     </a></article>
                 <article><a href="#">
-                        <figure><img src="img/picto_.paypalpng" alt="logo paypal"></figure>
+                        <figure><img src="img/picto_paypal.png" alt="logo paypal"></figure>
                         <h3>Paiement Sécurisé</h3>
                     </a></article>
                 <article><a href="#">
@@ -424,19 +439,20 @@
                         <h3>Twitter<br>4393 followers</h3>
                     </a></article>
             </div>
+            <!-- End of footer link -->
 
             <!-- Start of footer aside -->
             <aside>
                 <p>Webdesign et Développement par <a href="#">Axome</a> - Motorisé sous <a href="#">Prestashop </a></p>
                 <form action="traitement.php" method="post">
                     <p>
-                        <label for="newsletter">Newsletter</label><input type="mail" name="newsletter" id="newsletter" value="votre e-mail">
+                        <label for="newsletter">Newsletter</label><input type="email" name="newsletter" id="newsletter" value="votre e-mail">
                         <input type="submit" value="ok">
                     </p>
                 </form>
                 <p><a href="#">Nos passionnantes Conditions Générales de Vente</a></p>
             </aside>
-            <!-- Start of footer aside -->
+            <!-- End of footer aside -->
 
         </footer>
 
