@@ -99,7 +99,13 @@ textarea {
 
 * {
     font-family: "Georgia",Times,serif;
+    color: #555;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body figure {
     margin: 0;
     padding: 0;
 }
@@ -108,40 +114,97 @@ textarea {
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: #555;
+}
+
 /*Enc of common rules*/
 
 
 /*START OF HEADER*/
 
 header {
-    background-color: blue;
+    background-color: white;
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: 55px;
+    width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 15px #dfdfdf;
+    /*text-align: center;*/
 }
 
 .menu, .panier {
-    width: 10%;
-    background-color: green;
+    width: 55px;
 }
 
 .logo {
-    width: 30%;
-    background-color: green;
+    width: 55%;
 }
 
-header figure {
-    width: 80%;
+header img {
+    width: 45%;
+    max-height: 50%;
+    margin: 15px;
 }
 
-header figure a, header figure a img {
-    width: 80%;
+.logo img {
+    width: 100%;
+    max-height: 90%;
+    margin: 0 auto;
 }
+
+header figure{
+    width: 100%;
+    height: 100%;
+}
+
+
+
 
 /*END OF HEADER*/
 
 /*START OF SECTION*/
+
+h1 {
+    /*margin-top: 60px;*/
+    padding-top: 60px;
+}
+
+    /*START OF ASIDE*/
+
+.taille ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.taille li {
+    text-align: center;
+    background-color: #eee;
+    width: 62px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.taille li:first-child {
+    background-color: #4a4a4c;
+}
+
+.taille li p {
+    color: darkgrey;
+}
+
+.taille li:hover {
+    background-color: #4a4a4c;
+}
+
+
+
+    /*END OF ASIDE*/
 
 /*END OF SECTION*/
 
@@ -151,7 +214,7 @@ header figure a, header figure a img {
 
 
 /*~~~~~ START OF TABLETTE ~~~~~*/
-@media (min-width: 768px;) {
+@media (min-width: 768px) {
     /*start of common rules*/
 
     /*Enc of common rules*/
@@ -170,8 +233,185 @@ header figure a, header figure a img {
 }
 
 /*~~~~~ START OF DESK ~~~~~*/
-@media (min-width: 10224px;) {
+@media (min-width: 1024px) {
     /*start of common rules*/
+
+    body {
+    }
+
+    .mobil{
+        display: none;
+    }
+
+    .desk {
+        display: block;
+    }
+    /*end of common rules*/
+
+    /*start of HEADER*/
+
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        height: auto;
+        box-shadow: none;
+        background-image: url(../img/bg.png);
+    }
+
+    .logo {
+        order: -1;
+        margin-left: 5%;
+    }
+
+    .menu, .logo, .panier {
+        width: 30%;
+    }
+
+    /*start of bloc menu*/
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .menu li {
+        border-radius: 10%;
+        padding: 5px 10px;
+    }
+
+    .menu li:first-child {
+        background-color: white;
+    }
+
+    .menu li:hover {
+        background-color: white;
+    }
+    /*start of bloc menu*/
+
+    /*start of bloc panier*/
+    .panier {
+        /*background-color: pink;*/
+        margin-right: 5%;
+        height: 100%;
+        background-image: url(../img/ticket-bas.png);
+        background-size: 99% 200%;
+    }
+
+    .panier * {
+        color: #b35860;
+
+    }
+
+    .panier a {
+        text-decoration: underline;
+    }
+
+    .panier p:nth-child(2) {
+        float: right;
+        margin-right: 1%;
+        text-align: right;
+        width: 45%;
+        font-size: .8em;
+    }
+
+    .panier p:nth-child(3) {
+        width: 80%;
+        line-height: 1;
+        margin: auto;
+        text-align: center;
+        background-image: url(../img/stabilo.png);
+        background-size: 100%;
+    }
+
+    .nbPanier {
+        font-size: 2em;
+        font-weight: bold;
+        line-height: -1;
+    }
+    /*end of bloc panier*/
+
+    /*start of bloc navChaussette*/
+    .navChaussette {
+        width: 100%;
+    }
+
+    .navChaussette ul {
+        margin: 0 5%;
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navChaussette ul li {
+        width: 15%;
+        font-size: .8em;
+        padding: 5px;
+        border-radius: 5px 5px 0 0;
+        background-color: lightgrey;
+        opacity: .5;
+    }
+
+    .navChaussette ul li:first-child {
+        background-color: white;
+        opacity: 1;
+    }
+
+    .navChaussette figure {
+        width: 60px;
+        height: 100%;
+        float: left;
+        vertical-align: middle;
+    }
+
+    .navChaussette img {
+        margin: 0;
+        width: auto;
+        height: 100%;
+        max-height: none;
+    }
+
+    .navChaussette strong {
+        font-size: 1.4em;
+        font-style: italic;
+    }
+
+    .navChaussette p {
+        font-size: .8em;
+    }
+
+    .navChaussette ul li:hover {
+        opacity: 1;
+    }
+    /*end of bloc navChaussette*/
+
+    /*start of bloc taille*/
+    .taille {
+        background-color: red;
+
+    }
+
+    .taille ul {
+        flex-direction: column;
+        position: fixed;
+        right: 10px;
+    }
+
+    /*end of bloc taille*/
+
+
+
+
+
+
+
+
 
     /*Enc of common rules*/
 
